@@ -1,6 +1,9 @@
 require './lib/borisbikes'
 describe "DockingStation" do 
-#   it "should release the bike from the docking station" do 
-#     expect(DockingStation).to eq("release")
-#   end
+  describe "#release_bike" do
+    it "should release the bike from the docking station" do 
+      docking_station = DockingStation.new  
+      expect(docking_station).to respond_to(:release_bike)
+    end
+  end
 end
