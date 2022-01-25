@@ -1,4 +1,4 @@
-require './lib/borisbikes'
+require './lib/docking_station'
 describe "DockingStation" do 
   describe "#release_bike" do
     it "should release the bike from the docking station" do 
