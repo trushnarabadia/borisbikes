@@ -6,4 +6,11 @@ describe "DockingStation" do
       expect(docking_station).to respond_to(:release_bike)
     end
   end
+  describe "#working?" do
+    it "should check if the bike is working" do
+      docking_station = DockingStation.new
+      bike = docking_station.release_bike
+      expect(bike).to respond_to(:working?)
+    end
+  end
 end

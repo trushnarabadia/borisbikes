@@ -6,5 +6,6 @@ end
 
 class Bike
   def working?
+   # return nil
   end
 end
