@@ -1,7 +1,10 @@
-require './lib/docking_station'
+require './lib/bike'
 
 describe Bike do 
   describe "#working?" do
-    it { is_expected.to respond_to :working? }
+    it "should check if the bike is working" do 
+      bike = Bike.new  
+      expect(bike).to respond_to(:working?)
+    end
   end
 end

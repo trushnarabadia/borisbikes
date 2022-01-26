@@ -1,11 +1,12 @@
 class DockingStation
+  attr_reader :bike
+  
   def release_bike
-    #return "bike released"
-  end  
-end
-
-class Bike
-  def working?
-   # return nil
+    Bike.new
   end
+
+  def dock(bike)
+   @bike = bike
+  end
+
 end
